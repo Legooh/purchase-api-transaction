@@ -1,3 +1,4 @@
+Adicionando relatorio
 # Purchase Transaction API
 
 Spring Boot microservice to:
