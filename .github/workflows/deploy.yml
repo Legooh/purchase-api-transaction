@@ -55,7 +55,7 @@ jobs:
 
       - name: Push da imagem
         run: |
-          docker push ${{ secrets.REGISTRY_SERVER }}/purchase-api/purchase-api:${{ github.sha }}
+          docker push ${{ secrets.REGISTRY_SERVER }}/conteinerregisterstewart/purchase-api:${{ github.sha }}
 
       - name: Configurar KUBECONFIG
         run: |
@@ -64,7 +64,7 @@ jobs:
 
       - name: Atualizar imagem no manifesto
         run: |
-          sed -i "s|DOCKER_IMAGE_PLACEHOLDER|${{ secrets.REGISTRY_SERVER }}/purchase-api/purchase-api:${{ github.sha }}|g" k3s/app-purchase-transaction.yml
+          sed -i "s|DOCKER_IMAGE_PLACEHOLDER|${{ secrets.REGISTRY_SERVER }}/conteinerregisterstewart/purchase-api:${{ github.sha }}|g" k3s/app-purchase-transaction.yml
 
       - name: Deploy no cluster
         run: |
