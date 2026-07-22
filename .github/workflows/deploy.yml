@@ -51,7 +51,7 @@ jobs:
 
       - name: Build da imagem Docker
         run: |
-          docker build -t ${{ secrets.REGISTRY_SERVER }}/purchase-api/purchase-api:${{ github.sha }} .
+          docker build -t ${{ secrets.REGISTRY_SERVER }}/conteinerregisterstewart/purchase-api:${{ github.sha }} .
 
       - name: Push da imagem
         run: |
