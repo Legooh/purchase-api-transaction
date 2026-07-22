@@ -69,4 +69,4 @@ jobs:
       - name: Deploy no cluster
         run: |
           kubectl apply -f k3s/app-purchase-transaction.yml
-          kubectl rollout status deployment/purchase-transaction-api
+          kubectl rollout status deployment/purchase-api
