@@ -1,4 +1,4 @@
-name: CI/CD - Purchase Transaction APIsss
+name: CI/CD - Purchase Transaction API
 
 on:
   push:
